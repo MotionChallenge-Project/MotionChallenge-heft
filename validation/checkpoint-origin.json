@@ -1,0 +1,16 @@
+{
+  "author_graph_sha256": "932993adb4843da401cf9c8da29b844f94aa0e5868d37a08d3ba823a175801c3",
+  "author_data_sha256": "5944d6186d77f92522980d1cdc65a9a13f9aab9ca34cf049de20337d7a801742",
+  "packaged_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+  "initializer_names_equal": true,
+  "initializer_count": 33,
+  "all_tensors_equal": true,
+  "nodes_equal": false,
+  "loaded_model_equal": false,
+  "added_operation": "Concat(context,motion_command,target_motion,proprioception), axis=1",
+  "cases": 100,
+  "random_seed": 20261024,
+  "action_max_abs_error": 0,
+  "scope": "Checkpoint tensor and network wrapper equivalence; not full controller observation/reset parity.",
+  "native_nodes_preserved_exactly": true
+}

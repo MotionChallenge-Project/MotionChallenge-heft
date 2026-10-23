@@ -8,5 +8,17 @@
   "author_inference_review": "pending",
   "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
   "legacy_results": "not transferable to this adapter revision without rerunning",
-  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms"
+  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/Axellwppr/motion_tracking/blob/0d5ba31e33397f3543d350d98b637e26d92f470a/README.md",
+    "author_release_label": "Axellwppr/motion_tracking",
+    "kind": "verified_input_wrapper",
+    "kind_label": "Author weights with verified input wrapper",
+    "artifact_page_url": "https://github.com/Axellwppr/motion_tracking/tree/0d5ba31e33397f3543d350d98b637e26d92f470a/sim2real/config/g1/ckpts/G1_PMG",
+    "original_filename": "G1_PMG/policy.onnx + policy.onnx.data",
+    "verification": "The distributed single-file ONNX adds one input Concat. All 33 initializer tensors and all 29 native graph nodes are preserved exactly; action outputs matched on 100 random input cases (maximum absolute error 0). This checks the checkpoint wrapper, not full controller/reset parity.",
+    "download_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
+    "sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+    "verification_url": "https://github.com/motion-challenge-project/motion-challenge-heft/blob/main/validation/checkpoint-origin.json"
+  }
 }
