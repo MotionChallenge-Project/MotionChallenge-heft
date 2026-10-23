@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "max_abs_error": {
+    "context": 2.8610229518832853e-08,
+    "motion_command": 1.1890471940390057e-07,
+    "target_motion": 1.352061893555856e-07,
+    "proprioception": 3.9711594581604e-06,
+    "network": 0.0,
+    "action": 3.9711594581604e-06,
+    "motor_target": 2.771615982055664e-06,
+    "synthetic_action_history": 0.0,
+    "synthetic_motor_target": 2.086162567138672e-07
+  },
+  "limits": {
+    "context": 0.0002,
+    "motion_command": 0.0002,
+    "target_motion": 0.0002,
+    "proprioception": 0.0002,
+    "network": 0.0,
+    "action": 0.0002,
+    "motor_target": 0.0002,
+    "synthetic_action_history": 0.0002,
+    "synthetic_motor_target": 0.0002
+  },
+  "max_abs_native_action": 3.8560311794281006,
+  "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+  "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
+  "scope": "Pinned author observation modules, reset/boot, reference-index update, original ONNX, clipped action history and final controller target. SDK joint order shuffled; start/end reference clamping and synthetic out-of-range action covered. Transport and hardware imports omitted."
+}

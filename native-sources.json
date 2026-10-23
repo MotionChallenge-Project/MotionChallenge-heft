@@ -1,0 +1,17 @@
+{
+  "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
+  "source_repository": "https://github.com/Axellwppr/motion_tracking",
+  "files": {
+    "sim2real/config/g1/bridge.yaml": "0186dbd6fdecdb39dc4f050008745811c73dc3aaf73b18b0c1c165c643b9a0ab",
+    "sim2real/config/g1/controller.yaml": "5119276f22445e056b6f47110d95cec0b93607a6f8cef5f2b1f014600cb3cca5",
+    "sim2real/config/g1/retarget/teleop.yaml": "376dd56ee07da57bc0e6d343fa61a9887fb5399a762ac2290a87cc0dfac003da",
+    "sim2real/config/g1/tracking.yaml": "39703aeec267f1991f1a6050401d265a37f9ce1adef819bb0fc1f9036839e773",
+    "sim2real/config/g1/tracking_compliance.yaml": "ce9cf0026a2d8c35c4fe806039ca29f2cf6c03c4afa9ead68f6076df3ec0c1db",
+    "sim2real/src/runtime/observation.py": "34d287e725e74fef2ce6e806e96eb14861a3ac1a53463d7ef3e2c9a0792f7274",
+    "sim2real/src/runtime/policy.py": "e0cfe98435a3ad2166d89a39c52d4948acb243216de6daffec18300c23ac75af",
+    "sim2real/src/runtime/math_utils.py": "107700ff6343e6a70f6e6b279f77d30e7d193d00463f81439f84cbd87c2f77f9",
+    "sim2real/src/deploy.py": "5ccbbf280d1bb07bd32fda522dbd4bf94f8b9f67ed823a3da9f32b0897a4432c",
+    "sim2real/src/common/joint_mapper.py": "9ffbcf935dda078497cd9a4c82db164abd7f9d81654e62b66de35aa3fa4fc5c3"
+  },
+  "embedded_author_onnx_sha256": "57f926ff840b150a6f2fb7a7e99e9a17da463c31531f08e355134e4c8ae99448"
+}

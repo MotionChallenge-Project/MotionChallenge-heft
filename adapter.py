@@ -5,8 +5,6 @@ from motion_challenge.adapters.onnx import ONNXController
 
 
 class HEFT(ONNXController):
-    raw_action_history=True
-
     def reset(self,state,reference,seed):
         super().reset(state,reference,seed)
         self.boot=25

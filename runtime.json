@@ -59,7 +59,7 @@
       ]
     }
   },
-  "provenance_status": "author-inference review in progress",
+  "provenance_status": "author-inference parity passed",
   "official": false,
   "source_repository": "https://github.com/Axellwppr/motion_tracking",
   "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
