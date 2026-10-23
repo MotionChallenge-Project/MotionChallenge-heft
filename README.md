@@ -18,17 +18,18 @@ Results and traces are written outside Git. `--help` lists options.
 The root `motion-challenge` submodule owns data, physics, metrics and verification.
 This repository only adapts model inference; no `sim2real` dependency.
 
-**Development adapter — author-inference review pending.**
 [Provenance](provenance.json)
 
 MuJoCo 3.17 batch is the default. Use `--jobs 8` for parallel clips;
 download and evaluation progress updates every 5 seconds.
 
-Run all frames after tracking failure: `uv run evaluate.py --termination none`.
-This records full-motion errors under a separate protocol; success still requires no failure.
 
 ## Checkpoint source
 
 [Axellwppr/motion_tracking](https://github.com/Axellwppr/motion_tracking/blob/0d5ba31e33397f3543d350d98b637e26d92f470a/README.md) · [G1_PMG/policy.onnx + policy.onnx.data](https://github.com/Axellwppr/motion_tracking/tree/0d5ba31e33397f3543d350d98b637e26d92f470a/sim2real/config/g1/ckpts/G1_PMG). Author weights with verified input wrapper.
 
 The distributed single-file ONNX adds one input Concat. All 33 initializer tensors and all 29 native graph nodes are preserved exactly; action outputs matched on 100 random input cases (maximum absolute error 0). This checks the checkpoint wrapper, not full controller/reset parity.
+
+One `uv run evaluate.py` produces one verified `result.json`: success, completion,
+three MPBPE alignments through first failure and the same three over the full motion.
+Both scopes use the same checkpoint and source revision; no branch switching is needed.
