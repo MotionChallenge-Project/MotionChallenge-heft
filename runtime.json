@@ -1,0 +1,67 @@
+{
+  "id": "heft-g1-development-v1",
+  "entrypoint": "adapter:create",
+  "control_period_s": 0.02,
+  "reference_step_s": 0.02,
+  "reference_steps": [
+    -16,
+    -12,
+    -8,
+    -4,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "reference_offsets_s": [
+    -0.32,
+    -0.24,
+    -0.16,
+    -0.08,
+    -0.04,
+    -0.02,
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.12
+  ],
+  "reference_history_s": 0.32,
+  "reference_preview_s": 0.12,
+  "state_access": "privileged-state-v0",
+  "action_mode": "joint-pd-feedforward",
+  "inference_config": "policy.json",
+  "inference_config_sha256": "a7ca0ceb7d5c0ee31dc901b1ab4beb40546dcd21f46809456438f9e64fc3528e",
+  "weights": "checkpoints/policy.onnx",
+  "weights_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+  "virtual_bodies": {
+    "left_toe_link": {
+      "parent": "left_ankle_roll_link",
+      "position_parent_m": [
+        0.1,
+        0.0,
+        -0.02
+      ]
+    },
+    "right_toe_link": {
+      "parent": "right_ankle_roll_link",
+      "position_parent_m": [
+        0.1,
+        0.0,
+        -0.02
+      ]
+    }
+  },
+  "provenance_status": "author-inference review in progress",
+  "official": false,
+  "source_repository": "https://github.com/Axellwppr/motion_tracking",
+  "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
+  "weights_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download"
+}
