@@ -30,6 +30,6 @@ download and evaluation progress updates every 5 seconds.
 
 The distributed single-file ONNX adds one input Concat. All 33 initializer tensors and all 29 native graph nodes are preserved exactly; action outputs matched on 100 random input cases (maximum absolute error 0). This checks the checkpoint wrapper, not full controller/reset parity.
 
-One `uv run evaluate.py` produces one verified `result.json`: success, completion,
-three MPBPE alignments through first failure and the same three over the full motion.
-Both scopes use the same checkpoint and source revision; no branch switching is needed.
+One `uv run evaluate.py` rolls out each complete motion once, then verifies the trace.
+The same trajectory provides success, completion and all six MPBPE values in one
+`result.json`, with one source revision. No branch switching is needed.
