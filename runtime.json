@@ -1,6 +1,6 @@
 {
   "id": "heft-g1-development-v1",
-  "entrypoint": "adapter:create",
+  "entrypoint": "restricted:create",
   "control_period_s": 0.02,
   "reference_step_s": 0.02,
   "reference_steps": [
@@ -35,7 +35,7 @@
   ],
   "reference_history_s": 0.32,
   "reference_preview_s": 0.12,
-  "state_access": "privileged-state-v0",
+  "state_access": "ideal-proprioceptive-no-position-v1",
   "action_mode": "joint-pd-feedforward",
   "inference_config": "policy.json",
   "inference_config_sha256": "a7ca0ceb7d5c0ee31dc901b1ab4beb40546dcd21f46809456438f9e64fc3528e",
@@ -64,12 +64,8 @@
   "source_repository": "https://github.com/Axellwppr/motion_tracking",
   "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
   "weights_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
-  "default_track": "ideal-proprioception",
-  "observation_tracks": {
-    "ideal-proprioception": {
-      "entrypoint": "restricted:create",
-      "admission_record": "admission.json",
-      "admission_sha256": "b82a2b0db0e7a286d966661474aa44a93db34d9ed7d4c1564db0fd2795366b1e"
-    }
+  "observation_contract": {
+    "admission_record": "admission.json",
+    "admission_sha256": "b82a2b0db0e7a286d966661474aa44a93db34d9ed7d4c1564db0fd2795366b1e"
   }
 }
