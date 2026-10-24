@@ -1,0 +1,50 @@
+{
+  "schema": "MotionChallenge/observation-admission-v1",
+  "model": "heft",
+  "display_name": "HEFT PMG",
+  "state_access": "ideal-proprioceptive-no-position-v1",
+  "status": "inference_verified",
+  "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+  "auxiliary_artifacts": {},
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/Axellwppr/motion_tracking/blob/0d5ba31e33397f3543d350d98b637e26d92f470a/README.md",
+    "author_release_label": "Axellwppr/motion_tracking",
+    "kind": "verified_input_wrapper",
+    "kind_label": "Author weights with verified input wrapper",
+    "artifact_page_url": "https://github.com/Axellwppr/motion_tracking/tree/0d5ba31e33397f3543d350d98b637e26d92f470a/sim2real/config/g1/ckpts/G1_PMG",
+    "original_filename": "G1_PMG/policy.onnx + policy.onnx.data",
+    "verification": "The distributed single-file ONNX adds one input Concat. All 33 initializer tensors and all 29 native graph nodes are preserved exactly; action outputs matched on 100 random input cases (maximum absolute error 0). This checks the checkpoint wrapper, not full controller/reset parity.",
+    "download_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
+    "sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+    "verification_url": "https://github.com/MotionChallenge-project/MotionChallenge-heft/blob/main/validation/checkpoint-origin.json"
+  },
+  "author_source": "https://github.com/Axellwppr/motion_tracking",
+  "author_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
+  "base_adapter_commit": "b2929b81f2d6d4024a1cdaf18fb92cb9ea9cd398",
+  "production_source_sha256": {
+    "adapter.py": "11a858d8518cc02c5dab203a60af6e76dc131a5ff006ba9cd74ca00e0547d0c7",
+    "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+    "native-sources.json": "402876e2f1a7728aaf600d1685fe1931119d1ed2c6eb741c6853180732646346",
+    "policy.json": "a7ca0ceb7d5c0ee31dc901b1ab4beb40546dcd21f46809456438f9e64fc3528e",
+    "validate_inference.py": "d3ef96784ccbd7b972ee5ab189e4b8eea953f470141bacf74c4e6811e29e9c8b",
+    "validation/verify_checkpoint_origin.py": "7aa5304b344fe30c2ef208c74436a75f0e8e2ce334d5f286c41e8c531190875d"
+  },
+  "prior_native_parity_sha256": {
+    "validation/native-parity.json": "343f9df0b8c7e9254c31c627d27ed327f6a173c326f1a0b5e77dceb8f6de8f32"
+  },
+  "handling": "Released actor uses joint state, angular velocity/gravity or orientation and reference features. Retain author normalization, history/recurrent state, action processing and declared lookahead; validate numerical independence from actual translation.",
+  "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
+  "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
+  "new_evaluation": {
+    "status": "queued",
+    "inherited_scores": false
+  },
+  "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-heft",
+  "dependency_test": {
+    "path": "validation/observation-access.json",
+    "sha256": "c634d7efa655a376ed9f41374f522ced5f5fb3e9bbfef8308257f58da67a0823",
+    "code": "validate_observations.py",
+    "cases": 160,
+    "resets": 4
+  }
+}

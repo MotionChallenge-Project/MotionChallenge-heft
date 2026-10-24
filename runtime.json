@@ -63,5 +63,13 @@
   "official": false,
   "source_repository": "https://github.com/Axellwppr/motion_tracking",
   "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
-  "weights_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download"
+  "weights_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
+  "default_track": "ideal-proprioception",
+  "observation_tracks": {
+    "ideal-proprioception": {
+      "entrypoint": "restricted:create",
+      "admission_record": "admission.json",
+      "admission_sha256": "b82a2b0db0e7a286d966661474aa44a93db34d9ed7d4c1564db0fd2795366b1e"
+    }
+  }
 }
