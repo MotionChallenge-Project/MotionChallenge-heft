@@ -1,6 +1,6 @@
 {
   "model": "heft",
-  "submitter": "Motion Challenge",
+  "submitter": "MotionChallenge",
   "submission_type": "maintainer reproduction, not author submission",
   "upstream": "https://github.com/Axellwppr/motion_tracking",
   "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
@@ -19,7 +19,7 @@
     "verification": "The distributed single-file ONNX adds one input Concat. All 33 initializer tensors and all 29 native graph nodes are preserved exactly; action outputs matched on 100 random input cases (maximum absolute error 0). This checks the checkpoint wrapper, not full controller/reset parity.",
     "download_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
     "sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
-    "verification_url": "https://github.com/motion-challenge-project/motion-challenge-heft/blob/main/validation/checkpoint-origin.json"
+    "verification_url": "https://github.com/MotionChallenge-project/MotionChallenge-heft/blob/main/validation/checkpoint-origin.json"
   },
   "native_validation": "validation/native-parity.json",
   "correction": "Previous adapter stored unclipped raw actions in history. The author stores clipped actions; this revision follows that contract. Full benchmark rerun is required."

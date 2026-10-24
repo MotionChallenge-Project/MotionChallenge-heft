@@ -1,12 +1,12 @@
-# Motion Challenge · heft
+# MotionChallenge · heft
 
 [Author project](https://github.com/Axellwppr/motion_tracking) · [Checkpoint](https://github.com/Axellwppr/motion_tracking/tree/0d5ba31e33397f3543d350d98b637e26d92f470a/sim2real/config/g1/ckpts/G1_PMG) · [Provenance](provenance.json)
 
 ## Install and run
 
 ```bash
-git clone --recurse-submodules https://github.com/MotionChallenge-Project/motion-challenge-heft.git
-cd motion-challenge-heft
+git clone --recurse-submodules https://github.com/MotionChallenge-Project/MotionChallenge-heft.git
+cd MotionChallenge-heft
 uv sync
 uv run evaluate.py
 ```
