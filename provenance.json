@@ -1,13 +1,12 @@
 {
   "model": "heft",
   "submitter": "MotionChallenge",
-  "submission_type": "maintainer reproduction, not author submission",
+  "submission_type": "MotionChallenge reproduction",
   "upstream": "https://github.com/Axellwppr/motion_tracking",
   "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
   "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
   "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
-  "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
-  "legacy_results": "not transferable to this adapter revision without rerunning",
+  "benchmark_physics": "Shared canonical G1 nominal physics and initialization.",
   "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
   "checkpoint_origin": {
     "author_release_url": "https://github.com/Axellwppr/motion_tracking/blob/0d5ba31e33397f3543d350d98b637e26d92f470a/README.md",
