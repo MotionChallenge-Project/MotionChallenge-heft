@@ -27,7 +27,9 @@
     "native-sources.json": "402876e2f1a7728aaf600d1685fe1931119d1ed2c6eb741c6853180732646346",
     "policy.json": "a7ca0ceb7d5c0ee31dc901b1ab4beb40546dcd21f46809456438f9e64fc3528e",
     "validate_inference.py": "d3ef96784ccbd7b972ee5ab189e4b8eea953f470141bacf74c4e6811e29e9c8b",
-    "validation/verify_checkpoint_origin.py": "7aa5304b344fe30c2ef208c74436a75f0e8e2ce334d5f286c41e8c531190875d"
+    "validation/verify_checkpoint_origin.py": "7aa5304b344fe30c2ef208c74436a75f0e8e2ce334d5f286c41e8c531190875d",
+    "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831",
+    "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc"
   },
   "prior_native_parity_sha256": {
     "validation/native-parity.json": "343f9df0b8c7e9254c31c627d27ed327f6a173c326f1a0b5e77dceb8f6de8f32"
@@ -42,5 +44,10 @@
     "code": "validate_observations.py",
     "cases": 160,
     "resets": 4
+  },
+  "execution_validation": {
+    "path": "validation/concurrency.json",
+    "sha256": "7fba73cee5005ba1d8b27e4825876a9684d3ff44982292300700b643b0205460",
+    "scope": "Native outputs, independent histories/RNG, reordered slots/partial resets and all40 two-second closed-loop exact comparison; does not replace full benchmark evidence."
   }
 }

@@ -66,6 +66,8 @@
   "weights_url": "https://drive.usercontent.google.com/download?id=1yZybFGcaU77QMi24Syc7iXaTlzdLpWkA&export=download",
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "f058cf6e1ebfc0ba95d11cfa1c30ba31c048a11b3600fcb263af6e625d3d9bdb"
-  }
+    "admission_sha256": "7031787ff678221373798ad381c9aeb0b4600d80c1a26f39b89cb3746a307ec2"
+  },
+  "batch_entrypoint": "parallel:create",
+  "inference_workers": 4
 }
