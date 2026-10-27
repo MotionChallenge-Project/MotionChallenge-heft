@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "max_abs_error": {
+    "context": 2.8610229518832853e-08,
+    "motion_command": 1.1890471940390057e-07,
+    "target_motion": 1.352061893555856e-07,
+    "proprioception": 2.1457672119140625e-06,
+    "network": 0.0,
+    "action": 2.1457672119140625e-06,
+    "motor_target": 1.341104507446289e-06,
+    "synthetic_action_history": 0.0,
+    "synthetic_motor_target": 2.086162567138672e-07
+  },
+  "limits": {
+    "context": 0.0002,
+    "motion_command": 0.0002,
+    "target_motion": 0.0002,
+    "proprioception": 0.0002,
+    "network": 0.0,
+    "action": 0.0002,
+    "motor_target": 0.0002,
+    "synthetic_action_history": 0.0002,
+    "synthetic_motor_target": 0.0002
+  },
+  "max_abs_native_action": 3.856027126312256,
+  "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+  "source_commit": "0d5ba31e33397f3543d350d98b637e26d92f470a",
+  "scope": "Pinned author observation modules, reset/boot, reference-index update, original ONNX, clipped action history and final controller target. SDK joint order shuffled; start/end reference clamping and synthetic out-of-range action covered. Transport and hardware imports omitted.",
+  "review": {
+    "schema": "MotionChallenge/inference-review-v1",
+    "reviewed_at": "2026-10-27T07:41:40.030291+00:00",
+    "core_commit": "4bf520618f25f72d371117326edb01f4645eaa3f",
+    "base_adapter_commit": "0dda120631760e281f7f7a8a57e8ce7452f61c31",
+    "control_hz": 50.0,
+    "reference_offsets_s": [
+      -0.32,
+      -0.24,
+      -0.16,
+      -0.08,
+      -0.04,
+      -0.02,
+      0.0,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.12
+    ],
+    "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+    "auxiliary_sha256": {},
+    "deployment_route": "Packaged inference graph compared with the pinned original embedded author ONNX; compliance flag disabled as in the selected tracking deployment.",
+    "production_files_sha256": {
+      "adapter.py": "11a858d8518cc02c5dab203a60af6e76dc131a5ff006ba9cd74ca00e0547d0c7",
+      "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+      "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc",
+      "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831"
+    },
+    "inference_config_sha256": "a7ca0ceb7d5c0ee31dc901b1ab4beb40546dcd21f46809456438f9e64fc3528e",
+    "comparison_script_sha256": "d3ef96784ccbd7b972ee5ab189e4b8eea953f470141bacf74c4e6811e29e9c8b",
+    "default_batch": {
+      "status": "passed",
+      "cases": 103,
+      "reset_slots": 20,
+      "max_command_abs_error": 0.0,
+      "exact": true,
+      "tolerance": 1e-05,
+      "wall_s": 0.7452910989522934,
+      "checks": [
+        "default PolicyBatch array transport",
+        "1/3/8 active slots",
+        "reordered slots",
+        "independent partial resets and seeded RNG",
+        "reference endpoint clamping",
+        "all five motor command fields"
+      ],
+      "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791"
+    },
+    "restricted_access": {
+      "status": "passed",
+      "cases": 160,
+      "resets": 4,
+      "tolerance_abs": 2e-05,
+      "checkpoint_sha256": "192aaacc49ce066b85bdc9822bc35eca9ae21b8efc8371c089f7bc0077a86791",
+      "network_calls": 160,
+      "max_abs_error": {
+        "observation": 0.0,
+        "network_output": 0.0,
+        "motor_command": 0.0
+      },
+      "checks": [
+        "160 matched state sequences / 4 resets",
+        "large actual translation perturbations",
+        "reference windows preserved including endpoints",
+        "all captured ONNX inputs and outputs",
+        "all PD command fields",
+        "forbidden-field counterfactual before transport"
+      ],
+      "limits": "Finite numerical regression plus source audit; not a proof against malicious code or implicit neural odometry."
+    },
+    "default_batch_script_url": "https://github.com/MotionChallenge-Project/motionchallenge/blob/2ef7ecab3b3a06bb4a53fa137de2d7f9365d6b50/tools/check_adapter_inference.py",
+    "default_batch_script_sha256": "2cb7984c27f4bbca2355ed2e05b5a48ca2e5ceb865850e1b6f2445f06b594241",
+    "scope": "Matched-input inference, observation boundary, deployment configuration and default batch path. No benchmark rollouts or scores were changed."
+  }
+}
